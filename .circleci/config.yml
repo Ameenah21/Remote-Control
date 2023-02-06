@@ -1,0 +1,21 @@
+# Exercise: Config and Deployment
+configure_infrastructure: 
+  docker:
+    - image: 
+  steps:
+    - checkout
+    - add_ssh_keys:
+            # You can get this ID in the section where you registered the SSH Key
+            fingerprints: ["2a:a0:2f:48:85:d7:75:3c:d8:af:a6:d6:42:9d:e9:f5"] 
+    - run:
+        name: Install Ansible
+        command: |
+          apk add --update ansible
+          
+
+
+    - run:
+        name: Run Playbook and Configure server
+        command: |
+          # Your command
+          ansible-playbook -i [inventory-file] [playbook-file]
