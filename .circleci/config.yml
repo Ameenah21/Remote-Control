@@ -6,7 +6,7 @@ configure_infrastructure:
     - checkout
     - add_ssh_keys:
             # You can get this ID in the section where you registered the SSH Key
-            fingerprints: ["00:a7:e4:e3:8c:e1:c3:ef:84:bb:95:2c:c3:5e:27:a0"] 
+            fingerprints: ["2a:a0:2f:48:85:d7:75:3c:d8:af:a6:d6:42:9d:e9:f5"] 
     - run:
         name: Install Ansible
         command: |
